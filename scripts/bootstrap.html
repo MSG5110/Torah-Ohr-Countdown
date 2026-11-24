@@ -1,0 +1,15 @@
+<section id="startup-status" style="position:fixed;inset:0;z-index:1000;padding:40px 24px;overflow:auto;background:#091a12;color:#f5ebd5;font:16px/1.6 system-ui,sans-serif">
+<h1 style="font:28px Georgia,serif">Torah Ore</h1><p id="startup-detail">Opening the countdown… If this message remains visible, open this file in Chrome or Edge rather than an attachment or HTML preview app.</p>
+<button id="compatibility-start" type="button" style="background:#d5b46a;border:0;border-radius:5px;padding:14px 18px;color:#091a12;font:inherit">Open compatibility mode</button>
+<p style="font-size:13px;max-width:600px">Compatibility mode keeps the countdown, photographs and settings, with extra visual effects disabled. Saved settings and photographs are not deleted.</p>
+<noscript>This viewer does not run JavaScript. Save the file and open it with a browser that supports JavaScript.</noscript></section>
+<script data-startup-bootstrap>
+(function(){
+var panel=document.getElementById('startup-status'), detail=document.getElementById('startup-detail');
+function fail(message){panel.style.display='block';detail.textContent=message;}
+document.getElementById('compatibility-start').onclick=function(){location.hash='safe';location.reload();};
+window.addEventListener('error',function(event){if(event.message)fail('The display could not continue: '+event.message+'. Try compatibility mode or open the file in Chrome or Edge.');});
+window.addEventListener('unhandledrejection',function(event){var reason=event.reason;fail('The display reported an error: '+(reason&&reason.message?reason.message:String(reason))+'. Try compatibility mode or open the file in Chrome or Edge.');});
+setTimeout(function(){if(document.documentElement.dataset.appReady!=='true')fail('This HTML viewer did not finish starting the app. Try compatibility mode, or use Open with → Chrome or Edge.');},12000);
+})();
+</script>

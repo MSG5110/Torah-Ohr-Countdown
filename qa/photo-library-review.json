@@ -1,0 +1,185 @@
+{
+  "capturedAt": "2026-11-23T20:54:13.506408+00:00",
+  "automatedTestsPassed": 240,
+  "coreBrowserChecksPassed": 36,
+  "totalBrowserChecksPassed": 70,
+  "focused": {
+    "uploadAndOrganization": {
+      "results": [
+        {
+          "name": "First accepted photo appears before the batch finishes",
+          "pass": true
+        },
+        {
+          "name": "Import continues when settings close",
+          "pass": true
+        },
+        {
+          "name": "Mixed batch retains good photos and reports individual failures",
+          "pass": true
+        },
+        {
+          "name": "Successful originals have decoded thumbnails and a live slideshow",
+          "pass": true
+        },
+        {
+          "name": "HEIC failure gives a conversion instruction",
+          "pass": true
+        },
+        {
+          "name": "Retry only repeats failed files",
+          "pass": true
+        },
+        {
+          "name": "Sort orders filenames naturally",
+          "pass": true
+        },
+        {
+          "name": "Reverse updates the actual gallery",
+          "pass": true
+        },
+        {
+          "name": "Accessible reordering updates positions",
+          "pass": true
+        },
+        {
+          "name": "Bulk removal can be cancelled",
+          "pass": true
+        },
+        {
+          "name": "Search and selected removal preserve unselected photos",
+          "pass": true
+        },
+        {
+          "name": "Adding more files preserves the current library",
+          "pass": true
+        },
+        {
+          "name": "Storage failure retains photos with an actionable message",
+          "pass": true
+        },
+        {
+          "name": "Retry saving recovers without reuploading",
+          "pass": true
+        },
+        {
+          "name": "Order and photos persist after refresh",
+          "pass": true
+        },
+        {
+          "name": "Campaign deadline is untouched",
+          "pass": true
+        },
+        {
+          "name": "Phone tools fit without horizontal scrolling",
+          "pass": true
+        },
+        {
+          "name": "Stopping ignores a late decoder result and unlocks uploads",
+          "pass": true
+        },
+        {
+          "name": "Clear gallery still works with the new import system",
+          "pass": true
+        },
+        {
+          "name": "Cleared gallery stays empty after refresh",
+          "pass": true
+        },
+        {
+          "name": "No runtime exceptions",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "limitations": [
+        "Headless software graphics; physical TV playback and multi-day endurance remain unverified."
+      ]
+    },
+    "portableOfflineLibrary": {
+      "results": [
+        {
+          "name": "Export contains the complete ordered library and source fingerprints",
+          "pass": true
+        },
+        {
+          "name": "Portable file restores gallery on a fresh origin",
+          "pass": true
+        },
+        {
+          "name": "Embedded gallery can be organized and cleared fully offline",
+          "pass": true
+        },
+        {
+          "name": "Cleared embedded photos stay removed after reload",
+          "pass": true
+        },
+        {
+          "name": "No runtime exceptions",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "limitations": [
+        "The self-contained HTML was served locally with networking disabled; direct file navigation is restricted by the managed browser."
+      ]
+    },
+    "storageDeniedAnd4K": {
+      "results": [
+        {
+          "name": "Denied IndexedDB still allows usable session photos",
+          "pass": true
+        },
+        {
+          "name": "A 4K session photo retains full playback resolution",
+          "pass": true
+        },
+        {
+          "name": "Session-only photos can be preserved inside a complete HTML export",
+          "pass": true
+        },
+        {
+          "name": "No runtime exceptions",
+          "pass": true,
+          "detail": []
+        }
+      ],
+      "limitations": [
+        "Storage denial is simulated using a synchronous IndexedDB SecurityError in isolated Chromium."
+      ]
+    },
+    "fileDropAndSmallPhones": {
+      "results": [
+        {
+          "name": "Dropping a file into the panel imports it and prevents browser navigation",
+          "pass": true
+        },
+        {
+          "name": "phone: organizer and slideshow controls fit without overflow",
+          "pass": true
+        },
+        {
+          "name": "small-phone: organizer and slideshow controls fit without overflow",
+          "pass": true
+        },
+        {
+          "name": "No runtime exceptions",
+          "pass": true,
+          "detail": []
+        }
+      ]
+    }
+  },
+  "productionAndStandaloneBuild": "passed",
+  "standaloneEmbeddingChecks": "passed",
+  "visualReview": [
+    "Desktop upload and organization tools",
+    "Final phone gallery with frame, move, remove and selection controls",
+    "Storage-denied session-photo presentation"
+  ],
+  "limitations": [
+    "Headless software graphics do not measure physical TV/GPU playback FPS, hardware fullscreen or multi-day endurance.",
+    "Standalone tested over local HTTP, with networking disabled for portable-gallery operations; managed browser restricts direct file navigation.",
+    "Storage quota and permission failures were simulated in isolated Chromium."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "checks": [
+    "Two-hour hold and custom message are saved in the prepared prize",
+    "Message is hidden during the prize countdown",
+    "Revealed compact prize shows the exact custom message",
+    "Prize reveal leaves campaign clock position and dimensions unchanged",
+    "1080 prize and caption fit beneath the clock",
+    "4k prize and caption fit beneath the clock",
+    "phone prize and caption fit beneath the clock",
+    "phone-landscape prize and caption fit beneath the clock",
+    "Custom reveal duration updates without restarting the active countdown",
+    "Custom duration and text restore in the settings after refresh",
+    "A two-hour reveal remains visible after a simulated one-hour sleep",
+    "Ambient glow fades within its own ellipse instead of at a rectangular edge",
+    "Pulse and rolling glow follow the actual digits frame by frame",
+    "Ink uses wider native-resolution feathering",
+    "Ink preserves the fully visible outgoing photo underneath the incoming spread",
+    "Bundled HTML restores custom prize options while offline",
+    "Focused review records no runtime exceptions"
+  ],
+  "base": {
+    "x": 105.59375,
+    "y": 194.40625,
+    "width": 1708.8125,
+    "height": 691.1875
+  },
+  "after": {
+    "x": 105.59375,
+    "y": 194.40625,
+    "width": 1708.8125,
+    "height": 691.1875
+  },
+  "sync": {
+    "frames": 70,
+    "max": 0
+  },
+  "errors": [],
+  "capturedAt": "2026-11-22T12:55:26.620925+00:00",
+  "environment": "Headless Chromium, production web build and bundled HTML served over localhost",
+  "fixtures": "Generated synthetic photos and transparent prize",
+  "glowEdgeComparisons": [
+    {
+      "viewport": "1080",
+      "bottomRow": 919,
+      "oldBottomEdgeMaximumRGB": 4,
+      "newBottomEdgeMaximumRGB": 0,
+      "centerRGB": [
+        36,
+        32,
+        23
+      ],
+      "result": "passed"
+    },
+    {
+      "viewport": "phone",
+      "bottomRow": 716,
+      "oldBottomEdgeMaximumRGB": 4,
+      "newBottomEdgeMaximumRGB": 0,
+      "centerRGB": [
+        36,
+        32,
+        23
+      ],
+      "result": "passed"
+    }
+  ],
+  "glowDiagnosis": "The default farthest-corner ellipse in .number-aureole retained color at its bottom rectangle edge. A closest-side ellipse reaches zero before that edge.",
+  "automatedTestsPassed": 167,
+  "limitations": [
+    "One-hour sleep recovery was simulated by changing only a test prize timestamp.",
+    "Bundled HTML loaded over localhost and then tested offline; direct file navigation is restricted.",
+    "Physical TV, hardware fullscreen and overnight endurance unverified."
+  ]
+}

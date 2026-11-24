@@ -1,0 +1,63 @@
+{
+  "checks": [
+    "Multiple prizes can be added to a persistent library",
+    "Every prize persists its own countdown, reveal hold and message",
+    "Selecting another prize restores its saved editor fields",
+    "Any card starts its own settings even while another prize is being edited",
+    "Pause holds the public prize countdown without changing campaign settings",
+    "A paused prize survives refresh without counting down",
+    "Resume preserves remaining time and the original start timestamp",
+    "The active card can stop and hide its prize immediately",
+    "Reveal now shows the selected prize and its own message",
+    "Starting another card replaces the active prize with a fresh independent timer",
+    "Stopping an inactive card is disabled and cannot stop a different prize",
+    "Show now can switch directly to any saved prize without waiting",
+    "Invalid partial edits never crash the app or overwrite a valid prize duration",
+    "Returning to a prize after invalid edits restores its last valid settings",
+    "Closing settings flushes a final valid edit before the autosave delay",
+    "Preparing one prize leaves another active prize unchanged",
+    "A prepared prize starts with its saved independent settings",
+    "Applying a message to the active prize never restarts its timer",
+    "Replacing a prize picture preserves its saved timing and message",
+    "The library and editor fit a phone without horizontal scrolling",
+    "Inactive prizes can be removed without disturbing the active one",
+    "Active prize removal is protected until it is stopped",
+    "The bundled library restores saved prizes and controls offline",
+    "Start/show/stop controls remain functional while offline",
+    "Campaign deadline is unchanged by all prize operations",
+    "Library review records no runtime exceptions",
+    "On-screen controls stay available while editing below the library",
+    "Control dashboard can pause the active prize",
+    "Control dashboard can resume and reveal the active prize",
+    "Sticky prize controls and the editor fit the phone panel",
+    "Polish review has no runtime exceptions"
+  ],
+  "prizes": [
+    {
+      "id": "74fbd812-e29b-4331-a5ca-078fe4112791",
+      "name": "Prize Alpha",
+      "order": 0,
+      "countdownSeconds": 130,
+      "revealSeconds": 7200,
+      "revealText": "Updated on-screen message"
+    },
+    {
+      "id": "d7c4aeec-ac3f-4c47-9a15-4c8259943298",
+      "name": "torah-fixture-b",
+      "order": 1,
+      "countdownSeconds": 300,
+      "revealSeconds": 20,
+      "revealText": ""
+    }
+  ],
+  "errors": [],
+  "capturedAt": "2026-11-22T13:17:43.115116+00:00",
+  "environment": "Headless Chromium, production web build and bundled HTML over localhost",
+  "fixtures": "Three synthetic uploaded prize pictures, each configured independently",
+  "automatedTestsPassed": 176,
+  "standalone": "Inline HTML loaded over localhost and exercised with network disabled",
+  "limitations": [
+    "Direct file navigation is restricted in managed Chrome.",
+    "Physical TV, hardware fullscreen and overnight endurance remain unverified."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-24T12:38:02.222300+00:00",
+  "automatedTestsPassed": 265,
+  "testFilesPassed": 30,
+  "hostedBuild": "passed",
+  "standaloneEmbeddingChecks": "passed",
+  "newCoverage": [
+    "Signed admin cookies, incorrect passwords, expiry and same-origin writes",
+    "Metadata normalization, immutable media paths, prototype-key rejection and conditional ETag writes",
+    "Unlimited prize holds and removal of completed prizes",
+    "Separate phone and TV clients receiving the same deadline",
+    "Batching settings edits without overwriting unrelated fields",
+    "Read-only public display clients",
+    "Concurrent admin rejection and old-read/new-write race prevention",
+    "Original Blob reuse during incremental saves and real prize image replacement",
+    "Stable remote image URLs without eager photo-blob downloads"
+  ],
+  "limitations": [
+    "Managed browser preview could not start: listen EPERM on 127.0.0.1:4173. Browser QA was not bypassed.",
+    "Cloud Blob credentials, signed delivery and deployment require the user\u2019s Vercel connection and storage configuration; mocked service tests do not establish live cloud behavior.",
+    "Existing user photographs and campaign date were not available in this workspace; use the admin import on the connected site.",
+    "Physical TV/browser compatibility and multi-day endurance remain unverified."
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "capturedAt": "2026-11-23T17:33:12.694902+00:00",
+  "automatedTestsPassed": 195,
+  "webRegressionChecksPassed": 36,
+  "portableExportChecks": [
+    {
+      "name": "Export contains settings, original logo, every photo and prize",
+      "pass": true
+    },
+    {
+      "name": "Export flushes final prize edits and retains the two-hour reveal",
+      "pass": true,
+      "detail": 7200
+    },
+    {
+      "name": "Event deadlines and running/prepared prize clocks are absolute snapshots",
+      "pass": true
+    },
+    {
+      "name": "Captions cannot close the embedded JSON script",
+      "pass": true
+    },
+    {
+      "name": "Export embeds executable app, fonts and media with no external script or stylesheet",
+      "pass": true
+    },
+    {
+      "name": "Fresh browser storage restores the campaign and photos from the file",
+      "pass": true
+    },
+    {
+      "name": "Photo order and both gallery thumbnails restore",
+      "pass": true
+    },
+    {
+      "name": "Prize image, caption and two-hour duration restore on a new computer",
+      "pass": true
+    },
+    {
+      "name": "Restored photo keeps the exact saved image bytes",
+      "pass": true
+    },
+    {
+      "name": "Exported countdown, gallery and prize controls work with the network disabled",
+      "pass": true
+    },
+    {
+      "name": "Changes to an exported event survive refresh without reloading the original seed",
+      "pass": true
+    },
+    {
+      "name": "Stopping a bundled prize stays stopped after refresh",
+      "pass": true
+    },
+    {
+      "name": "Re-export includes the latest changes without nesting another app",
+      "pass": true,
+      "detail": {
+        "firstBytes": 3039024,
+        "secondBytes": 3038866
+      }
+    },
+    {
+      "name": "An intentionally emptied bundled gallery stays empty after refresh",
+      "pass": true
+    },
+    {
+      "name": "Bundled images remain usable when localStorage and IndexedDB are unavailable",
+      "pass": true
+    },
+    {
+      "name": "Bundled prize library remains usable without persistent storage",
+      "pass": true
+    },
+    {
+      "name": "Complete export control fits the phone settings panel",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "graphicsChecks": [
+    {
+      "name": "veil: full photo rendered directly on the GPU",
+      "pass": true,
+      "detail": {
+        "renderer": "gpu-image",
+        "width": 960,
+        "height": 540,
+        "contexts": 1,
+        "sourceWidth": 1600
+      }
+    },
+    {
+      "name": "veil: no per-frame SVG mask mutations",
+      "pass": true,
+      "detail": {
+        "expensiveMutations": 0,
+        "layers": 2,
+        "svg": 0
+      }
+    },
+    {
+      "name": "veil: the same GPU image remains sharp and visible after reveal",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "pixels": [
+          12,
+          34,
+          25,
+          255
+        ],
+        "contexts": 1
+      }
+    },
+    {
+      "name": "lumen: full photo rendered directly on the GPU",
+      "pass": true,
+      "detail": {
+        "renderer": "gpu-image",
+        "width": 960,
+        "height": 540,
+        "contexts": 1,
+        "sourceWidth": 1600
+      }
+    },
+    {
+      "name": "lumen: no per-frame SVG mask mutations",
+      "pass": true,
+      "detail": {
+        "expensiveMutations": 0,
+        "layers": 2,
+        "svg": 0
+      }
+    },
+    {
+      "name": "lumen: the same GPU image remains sharp and visible after reveal",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "pixels": [
+          236,
+          230,
+          211,
+          255
+        ],
+        "contexts": 1
+      }
+    },
+    {
+      "name": "wash: full photo rendered directly on the GPU",
+      "pass": true,
+      "detail": {
+        "renderer": "gpu-image",
+        "width": 960,
+        "height": 540,
+        "contexts": 1,
+        "sourceWidth": 1600
+      }
+    },
+    {
+      "name": "wash: no per-frame SVG mask mutations",
+      "pass": true,
+      "detail": {
+        "expensiveMutations": 0,
+        "layers": 2,
+        "svg": 0
+      }
+    },
+    {
+      "name": "wash: the same GPU image remains sharp and visible after reveal",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "pixels": [
+          12,
+          34,
+          25,
+          255
+        ],
+        "contexts": 1
+      }
+    },
+    {
+      "name": "Reduced motion freezes the GPU camera without replacing the photograph",
+      "pass": true
+    },
+    {
+      "name": "Graphics context loss restores a visible native photograph",
+      "pass": true
+    },
+    {
+      "name": "Repeated GPU transitions release outgoing contexts",
+      "pass": true,
+      "detail": {
+        "live": 1,
+        "total": 13,
+        "images": 1
+      }
+    },
+    {
+      "name": "phone: crisp buffer and correct responsive framing",
+      "pass": true,
+      "detail": {
+        "w": 780,
+        "h": 1688,
+        "renderer": "gpu-image",
+        "overflow": false
+      }
+    },
+    {
+      "name": "4k: crisp buffer and correct responsive framing",
+      "pass": true,
+      "detail": {
+        "w": 3840,
+        "h": 2160,
+        "renderer": "gpu-image",
+        "overflow": false
+      }
+    },
+    {
+      "name": "Automatic quality selects compositor blends on a software GPU",
+      "pass": true
+    },
+    {
+      "name": "Automatic fallback stays smooth without repeatedly allocating GPU contexts",
+      "pass": true
+    },
+    {
+      "name": "Low quality bypasses procedural texture preparation and GPU allocation",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "finalBuildChecks": [
+    {
+      "name": "Hidden photo rendering suspends after the fade finishes",
+      "pass": true
+    },
+    {
+      "name": "Photo rendering resumes when photographs return",
+      "pass": true
+    },
+    {
+      "name": "Final build exports its saved settings and complete galleries",
+      "pass": true
+    },
+    {
+      "name": "Final build has no runtime exceptions",
+      "pass": true
+    }
+  ],
+  "standaloneSHA256": "ddb6583cabb070e0eb640827c5a9be54550b0f454ae329685d30b08482b02398",
+  "visualReview": "GPU veil/watercolour and phone export dashboard screenshots inspected with synthetic fixtures.",
+  "limitations": [
+    "Headless graphics use SwiftShader; event-laptop hardware GPU/HDMI frame rate is not measured.",
+    "Portable HTML was served locally and exercised with the network disabled; direct file navigation remains restricted in the managed browser.",
+    "Multi-day endurance and physical fullscreen acceptance remain separate event-laptop checks."
+  ]
+}

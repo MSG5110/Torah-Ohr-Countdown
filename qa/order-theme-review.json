@@ -1,0 +1,58 @@
+{
+  "checks": [
+    "Five real uploaded fixture photos are available",
+    "In-order playback loops through the saved gallery arrangement",
+    "Switching to shuffle retains the visible photo",
+    "Shuffle displays every photo once per cycle in the running application",
+    "Shuffle has no immediate repeats across cycle boundaries",
+    "Control dashboard accurately announces the next photo in both modes",
+    "Shuffling never changes the persistent gallery arrangement",
+    "White theme remains selected at phone size",
+    "Bundled HTML restores shuffle and white theme while offline",
+    "Focused photo-order review records no runtime exceptions"
+  ],
+  "gallery": [
+    "torah-fixture-a.png",
+    "torah-fixture-b.png",
+    "order-c.png",
+    "order-d.png",
+    "order-e.png"
+  ],
+  "ordered": [
+    "torah-fixture-a.png",
+    "torah-fixture-b.png",
+    "order-c.png",
+    "order-d.png",
+    "order-e.png",
+    "torah-fixture-a.png",
+    "torah-fixture-b.png",
+    "order-c.png",
+    "order-d.png",
+    "order-e.png"
+  ],
+  "shuffled": [
+    "torah-fixture-a.png",
+    "order-c.png",
+    "order-d.png",
+    "order-e.png",
+    "torah-fixture-b.png",
+    "order-e.png",
+    "order-d.png",
+    "torah-fixture-a.png",
+    "order-c.png",
+    "torah-fixture-b.png",
+    "order-c.png",
+    "order-d.png",
+    "torah-fixture-b.png",
+    "order-e.png",
+    "torah-fixture-a.png"
+  ],
+  "errors": [],
+  "capturedAt": "2026-11-22T12:31:46.779430+00:00",
+  "environment": "Headless Chromium, production build and bundled standalone HTML over localhost",
+  "fixtures": "Five synthetic uploaded PNG files",
+  "standalone": "Inline HTML loaded over localhost; network disabled afterward",
+  "limitations": [
+    "Direct file navigation, physical TV, hardware fullscreen and overnight endurance unverified"
+  ]
+}

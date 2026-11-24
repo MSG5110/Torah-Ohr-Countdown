@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "name": "Preparing preserves settings without navigation or anchor clicks",
+      "pass": true
+    },
+    {
+      "name": "Prepared export survives settings closing and reopening",
+      "pass": true
+    },
+    {
+      "name": "Prepared export survives a complete viewer-style reload",
+      "pass": true
+    },
+    {
+      "name": "Recovered source includes original photo and settings",
+      "pass": true
+    },
+    {
+      "name": "Recovered source can be selected completely for manual copying",
+      "pass": true
+    },
+    {
+      "name": "Recovered HTML opens as an independent configured file",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Viewer reload simulated with a real Chromium page reload; native iPhone HTML Viewer Q memory termination is not available for verification."
+  ],
+  "capturedAt": "2026-11-23T22:29:15.172271+00:00",
+  "automatedTestsPassed": 249,
+  "productionAndStandaloneBuild": "passed",
+  "standaloneEmbeddingChecks": "passed",
+  "scope": "Export-only memory and recovery changes; display effects and image quality unchanged."
+}

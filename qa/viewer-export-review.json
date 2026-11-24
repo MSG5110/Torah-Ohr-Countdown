@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "name": "Preparing on iPhone never clicks a download link or navigates",
+      "pass": true
+    },
+    {
+      "name": "iPhone hides the unsafe download button and offers complete HTML copying",
+      "pass": true
+    },
+    {
+      "name": "Unavailable clipboard recovers to selectable source",
+      "pass": true
+    },
+    {
+      "name": "Selection contains the entire exported file",
+      "pass": true
+    },
+    {
+      "name": "Copied HTML includes the saved photograph and settings",
+      "pass": true
+    },
+    {
+      "name": "Saving the copied HTML as a new file restores the photograph",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "iPhone user agent and unavailable viewer APIs simulated in Chromium; native HTML Viewer Q clipboard/source editor requires device verification."
+  ],
+  "capturedAt": "2026-11-23T22:05:33.713651+00:00",
+  "automatedTestsPassed": 247,
+  "productionAndStandaloneBuild": "passed",
+  "standaloneEmbeddingChecks": "passed"
+}

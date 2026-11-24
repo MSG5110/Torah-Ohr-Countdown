@@ -1,0 +1,39 @@
+{
+  "checks": [
+    "Final-ten effects and full digits render without a recovery state",
+    "Pulsing final-ten digits stay inside the phone display",
+    "Refreshing a revealed prize restores the large transparent presentation",
+    "Main countdown does not double-shrink after refresh",
+    "Reduced motion retains the boxless prize layout",
+    "Hiding a reveal restores the campaign framing without changing its deadline",
+    "Main zero stays anchored when a prize reveals during its dissolve",
+    "Settled campaign launch makes room above the floating prize",
+    "Bundled standalone HTML restores a transparent prize",
+    "Prize source decodes with alpha while offline",
+    "Focused review has no runtime exceptions"
+  ],
+  "errors": [],
+  "zero": {
+    "before": {
+      "x": 105.59375,
+      "y": 215.9921875
+    },
+    "during": {
+      "x": 105.59375,
+      "y": 215.9921875
+    }
+  },
+  "capturedAt": "2026-11-22T12:23:36.942683+00:00",
+  "environment": "Headless Chromium, production build and bundled standalone HTML over localhost",
+  "standalone": "Inline HTML loaded over HTTP, then network disabled; no direct file navigation",
+  "visualReview": [
+    "final-ten-1080",
+    "final-ten-phone",
+    "transparent-prize-1080",
+    "transparent-prize-phone",
+    "prize-with-launch"
+  ],
+  "limitations": [
+    "Physical TV, hardware fullscreen and overnight endurance unverified"
+  ]
+}

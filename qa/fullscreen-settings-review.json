@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "name": "Control presents a prominent Enter full screen button",
+      "pass": true
+    },
+    {
+      "name": "Native button requests hidden navigation UI without getting stuck",
+      "pass": true,
+      "detail": {
+        "entered": false,
+        "request": {
+          "navigationUI": "hide"
+        },
+        "pending": "Enter full screen"
+      }
+    },
+    {
+      "name": "Confirmed API entry closes settings",
+      "pass": true,
+      "detail": {
+        "simulatedAPI": true
+      }
+    },
+    {
+      "name": "Reopening settings recognizes fullscreen",
+      "pass": true,
+      "detail": {
+        "simulatedAPI": true
+      }
+    },
+    {
+      "name": "Confirmed API exit keeps settings usable",
+      "pass": true,
+      "detail": {
+        "simulatedAPI": true
+      }
+    },
+    {
+      "name": "Pinned footer shares the entry action from another tab",
+      "pass": true,
+      "detail": {
+        "simulatedAPI": true
+      }
+    },
+    {
+      "name": "External fullscreen change updates the label",
+      "pass": true,
+      "detail": {
+        "simulatedAPI": true
+      }
+    },
+    {
+      "name": "Denied requests keep settings open and show pinned keyboard guidance",
+      "pass": true
+    },
+    {
+      "name": "Featured button, footer and error banner fit a small phone",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "limitations": [
+    "Native requests reached Chrome but fullscreen did not complete in this managed headless environment. Accepted entry/exit confirmations are explicitly simulated to verify UI behavior; actual browser-window fullscreen, OS-level F11, physical HDMI/TV and Safari require device acceptance."
+  ],
+  "capturedAt": "2026-11-23T21:59:31.653281+00:00",
+  "automatedTestsPassed": 247,
+  "productionAndStandaloneBuild": "passed",
+  "standaloneEmbeddingChecks": "passed",
+  "visualReview": "Reviewed the prominent Control button and pinned footer in desktop Chrome.",
+  "nativeFullscreenAcceptance": "Native Chrome request and timeout recovery verified; successful native window entry is unverified in the managed headless environment. UI confirmation branches are explicitly simulated."
+}

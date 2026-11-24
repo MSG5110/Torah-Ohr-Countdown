@@ -1,0 +1,92 @@
+{
+  "results": [
+    {
+      "name": "Ink spread is selectable and saves from the Photos controls",
+      "pass": true
+    },
+    {
+      "name": "Ink uses the GPU renderer without SVG filter updates",
+      "pass": true
+    },
+    {
+      "name": "The old photo remains opaque under the growing ink",
+      "pass": true,
+      "detail": {
+        "layers": 2,
+        "oldOpacity": "1",
+        "newSource": true,
+        "width": 1600
+      }
+    },
+    {
+      "name": "The same sharp image settles with no leftover border or image swap",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "corner": [
+          236,
+          230,
+          211,
+          255
+        ],
+        "center": [
+          236,
+          230,
+          211,
+          255
+        ]
+      }
+    },
+    {
+      "name": "phone: ink keeps crisp output and responsive framing",
+      "pass": true,
+      "detail": {
+        "w": 780,
+        "h": 1688,
+        "renderer": "gpu-image",
+        "overflow": false
+      }
+    },
+    {
+      "name": "4k: ink keeps crisp output and responsive framing",
+      "pass": true,
+      "detail": {
+        "w": 3840,
+        "h": 2160,
+        "renderer": "gpu-image",
+        "overflow": false
+      }
+    },
+    {
+      "name": "Ink selection and both full photos are included in the portable HTML",
+      "pass": true
+    },
+    {
+      "name": "A fresh event file restores the ink transition without the original browser gallery",
+      "pass": true
+    },
+    {
+      "name": "The embedded ink preparation and reveal work with the network disabled",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion uses the soft native blend fallback",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "limitations": [
+    "Headless SwiftShader verifies rendering behavior, not physical TV frame rate."
+  ],
+  "capturedAt": "2026-11-23T17:54:05.786646+00:00",
+  "automatedTestsPassed": 204,
+  "productionBuild": "passed",
+  "standaloneEmbeddingChecks": "passed",
+  "visualReview": "Early, middle and settled GPU ink frames inspected using synthetic fixtures; the wet-edge feather was refined and the complete focused review repeated.",
+  "implementation": "One connected fast-marching front through a seeded paper-permeability field, prepared once in the embedded worker and sampled by the existing GPU renderer.",
+  "standaloneSHA256": "cbf3fe94515cdd26662c8c30a3c14ed9df6bcc4cf12c784a2d8e5846fa0b71d0"
+}

@@ -1,0 +1,25 @@
+import{beforeEach,afterEach,describe,it,expect,vi}from'vitest';
+const sdk=vi.hoisted(()=>({upload:vi.fn(async(path:string,_blob:Blob,_options:unknown)=>({pathname:path}))}));
+vi.mock('@vercel/blob/client',()=>({upload:sdk.upload}));
+let server:any,authenticated=true,revision=0;
+beforeEach(()=>{vi.useFakeTimers();vi.stubEnv('VITE_SHARED_MODE','true');server=null;revision=0;authenticated=true;sdk.upload.mockClear();const document=Object.assign(new EventTarget(),{documentElement:{dataset:{}},visibilityState:'visible'});vi.stubGlobal('document',document);vi.stubGlobal('window',new EventTarget());const saved=new Map();vi.stubGlobal('localStorage',{getItem:(k:string)=>saved.get(k)??null,setItem:(k:string,v:string)=>saved.set(k,v)});vi.stubGlobal('fetch',vi.fn(async(path:string,options:any={})=>{
+ if(path==='/api/auth')return Response.json({authenticated,configured:true,storageConfigured:true});
+ if(options.method==='PATCH'){const body=JSON.parse(options.body);if(body.revision!==server.revision)return Response.json({error:'Another device changed the event.'},{status:409});server={...server,...body.patch,settings:{...server.settings,...body.patch.settings},revision:`r${++revision}`};return Response.json(server)}
+ return Response.json(server);
+}));});
+afterEach(()=>{vi.clearAllTimers();vi.useRealTimers();vi.unstubAllGlobals();vi.unstubAllEnvs()});
+async function client(){vi.resetModules();const {defaults}=await import('./engine');server??={version:1,revision:'initial',updatedAt:0,settings:{...defaults},photos:[],prizes:[],run:null,prepared:null};const c=await import('./sharedClient');await c.initializeShared();return c}
+describe('phone and TV synchronization',()=>{
+ it('a TV receives a phone deadline change without changing its clock source',async()=>{const phone=await client(),tv=await client();const pending=phone.commitShared({settings:{deadline:1800000000000}});await vi.advanceTimersByTimeAsync(300);await pending;await tv.refreshShared();expect(tv.sharedState().settings.deadline).toBe(1800000000000);expect(tv.sharedState().revision).toBe(server.revision)});
+ it('batches quick settings changes and preserves unrelated fields',async()=>{const c=await client(),a=c.commitShared({settings:{gold:1.2}}),b=c.commitShared({settings:{halo:false}});await vi.advanceTimersByTimeAsync(300);await Promise.all([a,b]);expect(server.settings.gold).toBe(1.2);expect(server.settings.halo).toBe(false);expect(server.settings.deadline).toBeNull();expect(revision).toBe(1)});
+ it('public display clients cannot commit changes',async()=>{authenticated=false;const c=await client();await expect(c.commitShared({settings:{gold:2}})).rejects.toThrow('Sign in');expect(revision).toBe(0)});
+ it('stale admin updates are rejected rather than overwriting another device',async()=>{const a=await client(),b=await client();const first=a.commitShared({settings:{gold:1.2}});await vi.advanceTimersByTimeAsync(300);await first;const rejected=expect(b.commitShared({settings:{gold:1.4}})).rejects.toThrow('Another device');await vi.advanceTimersByTimeAsync(300);await rejected;expect(server.settings.gold).toBe(1.2);expect(b.sharedSnapshot().conflicted).toBe(true)});
+ it('does not let an older background read replace a newly saved update',async()=>{
+  const c=await client(),old=JSON.parse(JSON.stringify(server));let resolve!:(value:Response)=>void;
+  vi.mocked(fetch).mockImplementationOnce(()=>new Promise<Response>(r=>{resolve=r}));
+  const read=c.refreshShared(),write=c.commitShared({settings:{gold:1.3}});await vi.advanceTimersByTimeAsync(300);await write;resolve(Response.json(old));await read;expect(c.sharedState().settings.gold).toBe(1.3);expect(c.sharedState().revision).toBe(server.revision);
+ });
+ it('uploads original pixels only once across incremental gallery saves',async()=>{const c=await client(),blob=new Blob(['original pixels'],{type:'image/webp'}),thumbnail=new Blob(['thumb'],{type:'image/webp'}),p={id:'p',name:'Photo',order:0,blob,thumbnail};await c.toCloud([p]);await c.toCloud([p]);expect(sdk.upload).toHaveBeenCalledTimes(2);expect(sdk.upload.mock.calls[0][1]).toBe(blob);expect(sdk.upload.mock.calls[0][2]).toMatchObject({access:'private',handleUploadUrl:'/api/upload'})});
+ it('replacing a prize image uploads new pixels instead of reusing its old path',async()=>{const c=await client(),old='media/00000000-0000-4000-8000-000000000001.webp',blob=new Blob(['replacement'],{type:'image/webp'});const rows=await c.toCloud([{id:'p',name:'Prize',order:0,blob,mediaPath:old,remoteUrl:c.mediaURL(old),bytes:999}]);expect(rows[0].mediaPath).not.toBe(old);expect(rows[0].bytes).toBe(blob.size);expect(sdk.upload).toHaveBeenCalledOnce()});
+ it('remote photos retain stable URLs and are not fetched as embedded blobs',async()=>{const c=await client();const rows=[{id:'p',name:'Photo',order:0,mediaPath:'media/00000000-0000-4000-8000-000000000001.webp',bytes:1000000}];const one=c.hydrateCloud(rows),two=c.hydrateCloud(rows);expect(one[0]).toBe(two[0]);expect(one[0].blob.size).toBe(0);expect(one[0].remoteUrl).toContain('/api/media?path=');expect(one[0].bytes).toBe(1000000)});
+});

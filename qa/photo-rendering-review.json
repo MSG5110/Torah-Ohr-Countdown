@@ -1,0 +1,82 @@
+{
+  "capturedAt": "2026-11-20T09:33:57.097096+00:00",
+  "automatedTestsPassed": 145,
+  "webBrowserChecks": {
+    "results": [
+      "App ready",
+      "Both photo thumbnails decoded",
+      "Photo framing saved in IndexedDB",
+      "Framing edits reuse the displayed photo source",
+      "Control contains photo and health status",
+      "Countdown and photograph visible",
+      "Next prize prepared separately",
+      "Prize countdown stays secondary to the main clock",
+      "Preparing leaves active deadline unchanged",
+      "Prize picture reveals at the end",
+      "Alt+H hides prize",
+      "Alt+P pauses cycling",
+      "Manual next photo works while paused",
+      "Health report downloads",
+      "4k countdown bounds",
+      "phone countdown bounds",
+      "Zero remains anchored",
+      "Rehearsal restores the real countdown",
+      "Gallery and prepared prize recover after refresh",
+      "Alt+R starts the prepared prize",
+      "Prepared start preserves the campaign deadline",
+      "Reduced-motion preference activates",
+      "Reduced motion freezes photo zoom",
+      "Native image uses the saved portrait focal variables",
+      "Cached production app restores offline",
+      "Offline gallery persists",
+      "No runtime exceptions"
+    ],
+    "limitations": [
+      "Fullscreen entry/exit did not complete in headless Chrome; verify on the event laptop."
+    ],
+    "errors": []
+  },
+  "inlineHTMLCompatibilityChecks": {
+    "checks": [
+      "Classic standalone script loads",
+      "Paint-brush reveal works offline in the bundled HTML",
+      "Mask generation uses a dedicated worker while offline",
+      "Brush border stays after the mask animation finishes",
+      "Brush retains the same native image and its zoom animation",
+      "Completed dynamic mask URL is released",
+      "Worker-unavailable fallback still reveals the photo",
+      "No app runtime exceptions"
+    ],
+    "errors": []
+  },
+  "nativeQualityChecks": {
+    "checks": [
+      "Ink uses a full-resolution native image throughout",
+      "The same image remains after the reveal",
+      "Zoom runs as a browser animation during the reveal",
+      "No runtime exceptions"
+    ],
+    "before": {
+      "scale": 1.02517,
+      "animations": 1,
+      "state": "revealing"
+    },
+    "after": {
+      "scale": 1.02562,
+      "animations": 1
+    },
+    "errors": []
+  },
+  "pixelComparison4K": {
+    "rgbMeanAbsoluteError": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "opaquePixelsCompared": 1751096,
+    "threshold": 2,
+    "passed": true
+  },
+  "environment": "Headless Chromium; inline HTML served over localhost and then exercised offline. Direct file:// navigation is blocked in this managed browser.",
+  "unverified": "Physical JVC/HDMI frame rate, fullscreen on the event laptop, and overnight endurance."
+}

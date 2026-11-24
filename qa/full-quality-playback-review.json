@@ -1,0 +1,202 @@
+{
+  "capturedAt": "2026-11-23T20:25:26.203967+00:00",
+  "automatedTestsPassed": 218,
+  "coreBrowserChecksPassed": 36,
+  "focused": {
+    "results": [
+      {
+        "name": "The next full-quality field is reused without a new foreground worker solve",
+        "pass": true
+      },
+      {
+        "name": "The incoming family changes and outgoing photo stays opaque",
+        "pass": true,
+        "detail": {
+          "oldOpacity": "1",
+          "family": 2,
+          "svg": false
+        }
+      },
+      {
+        "name": "The same image surface continues after the reveal",
+        "pass": true
+      },
+      {
+        "name": "Repeated ink reveals visibly change family without immediate repeats",
+        "pass": true,
+        "detail": {
+          "families": [
+            0,
+            2,
+            6,
+            7,
+            6,
+            3,
+            4,
+            7,
+            5,
+            4,
+            3,
+            0,
+            1,
+            7
+          ]
+        }
+      },
+      {
+        "name": "Original 4K photo dimensions are retained",
+        "pass": true
+      },
+      {
+        "name": "All high-quality fields keep 768-pixel detail and resources stay bounded",
+        "pass": true,
+        "detail": {
+          "live": 1,
+          "total": 14,
+          "layers": 1,
+          "fields": [
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ],
+            [
+              768,
+              432
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Replaying a photo preview changes the ink family too",
+        "pass": true
+      },
+      {
+        "name": "phone: no output resolution reduction or layout overflow",
+        "pass": true,
+        "detail": {
+          "w": 780,
+          "h": 1688,
+          "overflow": false
+        }
+      },
+      {
+        "name": "4k: no output resolution reduction or layout overflow",
+        "pass": true,
+        "detail": {
+          "w": 3840,
+          "h": 2160,
+          "overflow": false
+        }
+      },
+      {
+        "name": "Unavailable workers recover with native playback instead of UI-thread ink computation",
+        "pass": true
+      },
+      {
+        "name": "Portable export retains High quality, all photos and prizes",
+        "pass": true
+      },
+      {
+        "name": "Exported varied ink playback works fully offline",
+        "pass": true
+      },
+      {
+        "name": "No runtime exceptions",
+        "pass": true,
+        "detail": []
+      }
+    ],
+    "limitations": [
+      "Headless SwiftShader tests behavior and output sizes; physical laptop/TV 60 Hz acceptance remains separate."
+    ]
+  },
+  "preparationBenchmark": {
+    "results": [
+      {
+        "seed": 104,
+        "width": 768,
+        "height": 432,
+        "uncachedMs": 404.72642999999994,
+        "cachedMs": 239.00046899999995,
+        "identical": true
+      },
+      {
+        "seed": 107,
+        "width": 768,
+        "height": 432,
+        "uncachedMs": 444.20346100000006,
+        "cachedMs": 260.1984970000001,
+        "identical": true
+      },
+      {
+        "seed": 111,
+        "width": 768,
+        "height": 432,
+        "uncachedMs": 370.72980200000006,
+        "cachedMs": 275.64790700000003,
+        "identical": true
+      }
+    ],
+    "note": "Same full-resolution arrival fields, identical Float64 bytes. CPU timings are specific to this cloud machine, not TV playback FPS."
+  },
+  "visualReview": "Reviewed mid-reveal frame using synthetic fixtures; incoming reveal overlaps the outgoing full-resolution image.",
+  "qualityPreserved": [
+    "Original photo dimensions and pixels",
+    "Selected high-quality ink field resolution",
+    "4K and phone output resolution",
+    "Existing particle, trail and celebration detail"
+  ],
+  "limitations": [
+    "Headless SwiftShader validates behavior and dimensions; it does not measure physical GPU/TV playback FPS.",
+    "Hardware fullscreen and multi-day endurance remain unverified.",
+    "Standalone tested over local HTTP with networking disabled; managed browser restricts direct file navigation."
+  ]
+}

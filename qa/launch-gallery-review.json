@@ -1,0 +1,496 @@
+{
+  "capturedAt": "2026-11-23T20:31:55.607941+00:00",
+  "automatedTestsPassed": 219,
+  "productionAndStandaloneBuild": "passed",
+  "standaloneEmbeddingChecks": "passed",
+  "launch": {
+    "results": [
+      {
+        "name": "1080: launch message centered in both axes",
+        "pass": true,
+        "detail": {
+          "title": {
+            "x": 316.53125,
+            "y": 385.171875,
+            "w": 1286.9375,
+            "h": 309.640625,
+            "cx": 960,
+            "cy": 539.9921875
+          },
+          "logo": {
+            "x": 96,
+            "y": 167.0625,
+            "w": 1728,
+            "h": 185.71875,
+            "cx": 960,
+            "cy": 259.921875
+          },
+          "words": [
+            {
+              "x": 306.859375,
+              "y": 385.171875,
+              "w": 291.25,
+              "h": 309.640625,
+              "cx": 452.484375,
+              "cy": 539.9921875
+            },
+            {
+              "x": 627.140625,
+              "y": 385.171875,
+              "w": 356.5625,
+              "h": 309.640625,
+              "cx": 805.421875,
+              "cy": 539.9921875
+            },
+            {
+              "x": 1012.734375,
+              "y": 385.171875,
+              "w": 600.40625,
+              "h": 309.640625,
+              "cx": 1312.9375,
+              "cy": 539.9921875
+            }
+          ],
+          "w": 1920,
+          "h": 1080,
+          "overflow": false
+        }
+      },
+      {
+        "name": "1080: words and logo contained without overlap",
+        "pass": true,
+        "detail": {
+          "title": {
+            "x": 316.53125,
+            "y": 385.171875,
+            "w": 1286.9375,
+            "h": 309.640625,
+            "cx": 960,
+            "cy": 539.9921875
+          },
+          "logo": {
+            "x": 96,
+            "y": 167.0625,
+            "w": 1728,
+            "h": 185.71875,
+            "cx": 960,
+            "cy": 259.921875
+          },
+          "words": [
+            {
+              "x": 306.859375,
+              "y": 385.171875,
+              "w": 291.25,
+              "h": 309.640625,
+              "cx": 452.484375,
+              "cy": 539.9921875
+            },
+            {
+              "x": 627.140625,
+              "y": 385.171875,
+              "w": 356.5625,
+              "h": 309.640625,
+              "cx": 805.421875,
+              "cy": 539.9921875
+            },
+            {
+              "x": 1012.734375,
+              "y": 385.171875,
+              "w": 600.40625,
+              "h": 309.640625,
+              "cx": 1312.9375,
+              "cy": 539.9921875
+            }
+          ],
+          "w": 1920,
+          "h": 1080,
+          "overflow": false
+        }
+      },
+      {
+        "name": "4k: launch message centered in both axes",
+        "pass": true,
+        "detail": {
+          "title": {
+            "x": 632.96875,
+            "y": 770.34375,
+            "w": 2574.046875,
+            "h": 619.296875,
+            "cx": 1919.9921875,
+            "cy": 1079.9921875
+          },
+          "logo": {
+            "x": 192,
+            "y": 334.75,
+            "w": 3456,
+            "h": 370.796875,
+            "cx": 1920,
+            "cy": 520.1484375
+          },
+          "words": [
+            {
+              "x": 613.625,
+              "y": 770.34375,
+              "w": 582.53125,
+              "h": 619.296875,
+              "cx": 904.890625,
+              "cy": 1079.9921875
+            },
+            {
+              "x": 1254.234375,
+              "y": 770.34375,
+              "w": 713.171875,
+              "h": 619.296875,
+              "cx": 1610.8203125,
+              "cy": 1079.9921875
+            },
+            {
+              "x": 2025.484375,
+              "y": 770.34375,
+              "w": 1200.875,
+              "h": 619.296875,
+              "cx": 2625.921875,
+              "cy": 1079.9921875
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "overflow": false
+        }
+      },
+      {
+        "name": "4k: words and logo contained without overlap",
+        "pass": true,
+        "detail": {
+          "title": {
+            "x": 632.96875,
+            "y": 770.34375,
+            "w": 2574.046875,
+            "h": 619.296875,
+            "cx": 1919.9921875,
+            "cy": 1079.9921875
+          },
+          "logo": {
+            "x": 192,
+            "y": 334.75,
+            "w": 3456,
+            "h": 370.796875,
+            "cx": 1920,
+            "cy": 520.1484375
+          },
+          "words": [
+            {
+              "x": 613.625,
+              "y": 770.34375,
+              "w": 582.53125,
+              "h": 619.296875,
+              "cx": 904.890625,
+              "cy": 1079.9921875
+            },
+            {
+              "x": 1254.234375,
+              "y": 770.34375,
+              "w": 713.171875,
+              "h": 619.296875,
+              "cx": 1610.8203125,
+              "cy": 1079.9921875
+            },
+            {
+              "x": 2025.484375,
+              "y": 770.34375,
+              "w": 1200.875,
+              "h": 619.296875,
+              "cx": 2625.921875,
+              "cy": 1079.9921875
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "overflow": false
+        }
+      },
+      {
+        "name": "phone: launch message centered in both axes",
+        "pass": true,
+        "detail": {
+          "title": {
+            "x": 19.5,
+            "y": 338.078125,
+            "w": 351,
+            "h": 167.84375,
+            "cx": 195,
+            "cy": 422
+          },
+          "logo": {
+            "x": 19.5,
+            "y": 213.75,
+            "w": 351,
+            "h": 90.578125,
+            "cx": 195,
+            "cy": 259.0390625
+          },
+          "words": [
+            {
+              "x": 99.53125,
+              "y": 338.078125,
+              "w": 82.15625,
+              "h": 83.921875,
+              "cx": 140.609375,
+              "cy": 380.0390625
+            },
+            {
+              "x": 189.890625,
+              "y": 338.078125,
+              "w": 100.578125,
+              "h": 83.921875,
+              "cx": 240.1796875,
+              "cy": 380.0390625
+            },
+            {
+              "x": 110.3125,
+              "y": 422,
+              "w": 169.375,
+              "h": 83.921875,
+              "cx": 195,
+              "cy": 463.9609375
+            }
+          ],
+          "w": 390,
+          "h": 844,
+          "overflow": false
+        }
+      },
+      {
+        "name": "phone: words and logo contained without overlap",
+        "pass": true,
+        "detail": {
+          "title": {
+            "x": 19.5,
+            "y": 338.078125,
+            "w": 351,
+            "h": 167.84375,
+            "cx": 195,
+            "cy": 422
+          },
+          "logo": {
+            "x": 19.5,
+            "y": 213.75,
+            "w": 351,
+            "h": 90.578125,
+            "cx": 195,
+            "cy": 259.0390625
+          },
+          "words": [
+            {
+              "x": 99.53125,
+              "y": 338.078125,
+              "w": 82.15625,
+              "h": 83.921875,
+              "cx": 140.609375,
+              "cy": 380.0390625
+            },
+            {
+              "x": 189.890625,
+              "y": 338.078125,
+              "w": 100.578125,
+              "h": 83.921875,
+              "cx": 240.1796875,
+              "cy": 380.0390625
+            },
+            {
+              "x": 110.3125,
+              "y": 422,
+              "w": 169.375,
+              "h": 83.921875,
+              "cx": 195,
+              "cy": 463.9609375
+            }
+          ],
+          "w": 390,
+          "h": 844,
+          "overflow": false
+        }
+      },
+      {
+        "name": "landscape: launch message centered in both axes",
+        "pass": true,
+        "detail": {
+          "title": {
+            "x": 193.765625,
+            "y": 140.09375,
+            "w": 456.453125,
+            "h": 109.8125,
+            "cx": 421.9921875,
+            "cy": 195
+          },
+          "logo": {
+            "x": 42.1875,
+            "y": 69.359375,
+            "w": 759.625,
+            "h": 59.046875,
+            "cx": 422,
+            "cy": 98.8828125
+          },
+          "words": [
+            {
+              "x": 190.34375,
+              "y": 140.09375,
+              "w": 103.28125,
+              "h": 109.8125,
+              "cx": 241.984375,
+              "cy": 195
+            },
+            {
+              "x": 303.9375,
+              "y": 140.09375,
+              "w": 126.453125,
+              "h": 109.8125,
+              "cx": 367.1640625,
+              "cy": 195
+            },
+            {
+              "x": 440.703125,
+              "y": 140.09375,
+              "w": 212.9375,
+              "h": 109.8125,
+              "cx": 547.171875,
+              "cy": 195
+            }
+          ],
+          "w": 844,
+          "h": 390,
+          "overflow": false
+        }
+      },
+      {
+        "name": "landscape: words and logo contained without overlap",
+        "pass": true,
+        "detail": {
+          "title": {
+            "x": 193.765625,
+            "y": 140.09375,
+            "w": 456.453125,
+            "h": 109.8125,
+            "cx": 421.9921875,
+            "cy": 195
+          },
+          "logo": {
+            "x": 42.1875,
+            "y": 69.359375,
+            "w": 759.625,
+            "h": 59.046875,
+            "cx": 422,
+            "cy": 98.8828125
+          },
+          "words": [
+            {
+              "x": 190.34375,
+              "y": 140.09375,
+              "w": 103.28125,
+              "h": 109.8125,
+              "cx": 241.984375,
+              "cy": 195
+            },
+            {
+              "x": 303.9375,
+              "y": 140.09375,
+              "w": 126.453125,
+              "h": 109.8125,
+              "cx": 367.1640625,
+              "cy": 195
+            },
+            {
+              "x": 440.703125,
+              "y": 140.09375,
+              "w": 212.9375,
+              "h": 109.8125,
+              "cx": 547.171875,
+              "cy": 195
+            }
+          ],
+          "w": 844,
+          "h": 390,
+          "overflow": false
+        }
+      },
+      {
+        "name": "Confetti visibly falls during the early fireworks entrance",
+        "pass": true,
+        "detail": {
+          "firstFoil": -0.478,
+          "firstStroke": 0.159
+        }
+      },
+      {
+        "name": "Reduced motion retains the centered settled message",
+        "pass": true
+      },
+      {
+        "name": "No runtime exceptions",
+        "pass": true,
+        "detail": []
+      }
+    ],
+    "limitations": [
+      "Headless Chromium with SwiftShader; physical TV/GPU frame rate and fullscreen remain unverified."
+    ]
+  },
+  "visibleCelebrationOverlap": {
+    "firstVisibleConfetti": 1.07,
+    "firstFireworkStroke": 1.06,
+    "sharedWindowBeforeThreeSeconds": true,
+    "errors": []
+  },
+  "gallery": {
+    "results": [
+      {
+        "name": "Clear gallery opens an in-app confirmation without native dialogs",
+        "pass": true
+      },
+      {
+        "name": "Cancel preserves the full gallery",
+        "pass": true
+      },
+      {
+        "name": "Confirm clears the gallery and reports persistence success",
+        "pass": true
+      },
+      {
+        "name": "Displayed photos are also released after clearing",
+        "pass": true
+      },
+      {
+        "name": "Campaign deadline is unchanged",
+        "pass": true
+      },
+      {
+        "name": "Empty gallery persists across refresh",
+        "pass": true
+      },
+      {
+        "name": "Embedded event gallery clears without a native dialog",
+        "pass": true
+      },
+      {
+        "name": "Bundled photos do not reappear after refresh",
+        "pass": true
+      },
+      {
+        "name": "No runtime exceptions",
+        "pass": true,
+        "detail": []
+      }
+    ],
+    "limitations": [
+      "IndexedDB persistence exercised in isolated Chromium; HTML viewers may deny persistent storage."
+    ]
+  },
+  "visualReview": [
+    "Settled launch at 1080p and phone portrait",
+    "Actual falling confetti and firework trails during the launch reveal"
+  ],
+  "limitations": [
+    "Headless software graphics do not establish physical TV/GPU frame rate, hardware fullscreen or long-run endurance.",
+    "Standalone was served locally; direct file navigation is restricted in the managed browser."
+  ]
+}

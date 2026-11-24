@@ -1,0 +1,265 @@
+{
+  "checks": [
+    "Control opens with four essential status cards and collapsed diagnostics",
+    "End key selects the last settings section",
+    "Keyboard arrows navigate settings sections",
+    "Alt+Right advances photos without changing the settings section",
+    "Event keeps deadline and original-logo controls without unused title fields",
+    "Launch message is editable and saved in Finale",
+    "Themes and common appearance controls are visible; effects start collapsed",
+    "Advanced lighting controls still save settings",
+    "Countdown sizing is no longer duplicated in Animation",
+    "Reorganized animation toggles remain clickable",
+    "Photo modes use readable names and treatment starts collapsed",
+    "Advanced photo controls remain functional",
+    "Prize editor keeps primary actions visible and folds secondary actions",
+    "Prepared prize action still works in the cleaned editor",
+    "desktop settings fit with all eight navigation sections visible",
+    "phone settings fit with all eight navigation sections visible",
+    "small-phone settings fit with all eight navigation sections visible",
+    "landscape settings fit with all eight navigation sections visible",
+    "Preview status and exit are available in the settings header",
+    "Header exit returns to the real deadline without changing it",
+    "Done closes settings cleanly",
+    "Cleaned settings and saved options work offline in the bundled HTML",
+    "Settings review records no runtime exceptions",
+    "Event time information can be expanded",
+    "Advanced state does not leak between unrelated settings sections",
+    "Live shortcuts leave settings navigation unchanged",
+    "Navigation check records no runtime exceptions"
+  ],
+  "layouts": [
+    {
+      "viewport": "desktop",
+      "section": "Control",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "desktop",
+      "section": "Event",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "desktop",
+      "section": "Appearance",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "desktop",
+      "section": "Photos",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "desktop",
+      "section": "Animation",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "desktop",
+      "section": "Prizes",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "desktop",
+      "section": "Finale",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "desktop",
+      "section": "Preview",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "phone",
+      "section": "Control",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "phone",
+      "section": "Event",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "phone",
+      "section": "Appearance",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "phone",
+      "section": "Photos",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "phone",
+      "section": "Animation",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "phone",
+      "section": "Prizes",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "phone",
+      "section": "Finale",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "phone",
+      "section": "Preview",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "small-phone",
+      "section": "Control",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "small-phone",
+      "section": "Event",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "small-phone",
+      "section": "Appearance",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "small-phone",
+      "section": "Photos",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "small-phone",
+      "section": "Animation",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "small-phone",
+      "section": "Prizes",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "small-phone",
+      "section": "Finale",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "small-phone",
+      "section": "Preview",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "landscape",
+      "section": "Control",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "landscape",
+      "section": "Event",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "landscape",
+      "section": "Appearance",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "landscape",
+      "section": "Photos",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "landscape",
+      "section": "Animation",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "landscape",
+      "section": "Prizes",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "landscape",
+      "section": "Finale",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    },
+    {
+      "viewport": "landscape",
+      "section": "Preview",
+      "panelFits": true,
+      "navFits": true,
+      "doneVisible": true
+    }
+  ],
+  "errors": [],
+  "capturedAt": "2026-11-22T13:41:17.741032+00:00",
+  "environment": "Headless Chromium, production build and bundled standalone HTML over localhost",
+  "automatedTestsPassed": 176,
+  "limitations": [
+    "Direct file navigation is restricted in managed Chrome.",
+    "Physical TV, hardware fullscreen and overnight endurance remain unverified."
+  ]
+}

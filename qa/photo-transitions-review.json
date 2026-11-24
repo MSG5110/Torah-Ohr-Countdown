@@ -1,0 +1,229 @@
+{
+  "capturedAt": "2026-11-22T14:13:48.198471+00:00",
+  "automatedTestsPassed": 178,
+  "productionBuild": "passed",
+  "standaloneChecks": "passed",
+  "webRegressionChecks": 36,
+  "focusedTransitionChecks": [
+    {
+      "name": "velvet: full native images blend without removing outgoing",
+      "pass": true,
+      "detail": {
+        "layers": 2,
+        "style": "velvet",
+        "nativeWidth": 1600,
+        "sourceChanged": true,
+        "zoom": 1,
+        "oldOpacity": "1",
+        "mask": "none",
+        "gaussian": false
+      }
+    },
+    {
+      "name": "velvet: same sharp image remains after reveal",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "mask": "none",
+        "frame": "none",
+        "zoom": 1,
+        "urls": 2
+      }
+    },
+    {
+      "name": "glide: full native images blend without removing outgoing",
+      "pass": true,
+      "detail": {
+        "layers": 2,
+        "style": "glide",
+        "nativeWidth": 1600,
+        "sourceChanged": true,
+        "zoom": 1,
+        "oldOpacity": "1",
+        "mask": "none",
+        "gaussian": false
+      }
+    },
+    {
+      "name": "glide: same sharp image remains after reveal",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "mask": "none",
+        "frame": "none",
+        "zoom": 1,
+        "urls": 2
+      }
+    },
+    {
+      "name": "veil: full native images blend without removing outgoing",
+      "pass": true,
+      "detail": {
+        "layers": 2,
+        "style": "veil",
+        "nativeWidth": 1600,
+        "sourceChanged": true,
+        "zoom": 1,
+        "oldOpacity": "1",
+        "mask": "url(\"#cinema-matte-r17\")",
+        "gaussian": false
+      }
+    },
+    {
+      "name": "veil: same sharp image remains after reveal",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "mask": "none",
+        "frame": "none",
+        "zoom": 1,
+        "urls": 2
+      }
+    },
+    {
+      "name": "lumen: full native images blend without removing outgoing",
+      "pass": true,
+      "detail": {
+        "layers": 2,
+        "style": "lumen",
+        "nativeWidth": 1600,
+        "sourceChanged": true,
+        "zoom": 1,
+        "oldOpacity": "1",
+        "mask": "url(\"#cinema-matte-r17\")",
+        "gaussian": false
+      }
+    },
+    {
+      "name": "lumen: same sharp image remains after reveal",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "mask": "none",
+        "frame": "none",
+        "zoom": 1,
+        "urls": 2
+      }
+    },
+    {
+      "name": "wash: full native images blend without removing outgoing",
+      "pass": true,
+      "detail": {
+        "layers": 2,
+        "style": "wash",
+        "nativeWidth": 1600,
+        "sourceChanged": true,
+        "zoom": 1,
+        "oldOpacity": "1",
+        "mask": "url(\"#cinema-matte-r17\")",
+        "gaussian": false
+      }
+    },
+    {
+      "name": "wash: same sharp image remains after reveal",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "mask": "none",
+        "frame": "url(\"blob:http://127.0.0.1:4177/a66d8a53-2701-4f6d-bed1-81a32439fe59\")",
+        "zoom": 1,
+        "urls": 3
+      }
+    },
+    {
+      "name": "Rapid skips preserve the active incoming image",
+      "pass": true
+    },
+    {
+      "name": "Rapid skips settle back to one image",
+      "pass": true
+    },
+    {
+      "name": "Varied avoids repeated styles and keeps resource count bounded",
+      "pass": true,
+      "detail": {
+        "styles": [
+          "wash",
+          "velvet",
+          "wash",
+          "glide",
+          "veil",
+          "velvet",
+          "wash",
+          "veil",
+          "wash",
+          "veil",
+          "velvet",
+          "veil",
+          "velvet",
+          "glide",
+          "lumen",
+          "veil"
+        ],
+        "resources": {
+          "live": 2,
+          "created": 18,
+          "revoked": 16,
+          "images": 1
+        }
+      }
+    },
+    {
+      "name": "Reduced motion freezes exactly the same image pose",
+      "pass": true
+    },
+    {
+      "name": "phone: edge treatment fits viewport without overflow",
+      "pass": true
+    },
+    {
+      "name": "4k: edge treatment fits viewport without overflow",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "qualityAndFallbackChecks": [
+    {
+      "name": "4K image retains its native source during mask",
+      "pass": true,
+      "detail": {
+        "width": 3840,
+        "pose": "matrix(1.02694, 0, 0, 1.02694, 0.434883, 0.133486)"
+      }
+    },
+    {
+      "name": "Standalone Watercolour plays fully offline with embedded matte preparation",
+      "pass": true
+    },
+    {
+      "name": "No-worker fallback prepares and completes a Watercolour reveal",
+      "pass": true
+    },
+    {
+      "name": "Unsupported masks fall back to a clean native-image blend",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "nativePixelComparison": {
+    "sourceWidth": 3840,
+    "comparedOpaquePixels": 510862,
+    "maximumChannelDifference": 0,
+    "meanChannelDifference": 0.0,
+    "differentPixels": 0
+  },
+  "visualReview": "Early, middle and settled frames inspected for the five concrete styles; portrait and 4K Watercolour reviewed. Synthetic fixtures only.",
+  "limitations": [
+    "Physical TV/GPU frame rate and multi-day endurance require the event laptop.",
+    "Managed Chrome blocks direct file navigation; the embedded HTML was served locally and exercised with networking disabled.",
+    "The 16-transition resource-bound exercise is not a multi-day endurance test."
+  ]
+}
